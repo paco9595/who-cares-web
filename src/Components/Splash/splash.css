@@ -1,0 +1,97 @@
+.splash {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.animationContainer{
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+@keyframes button {
+  from {opacity: 0;
+    transition: opacity 1s linear;
+    -webkit-transition: opacity 1s linear;
+    -moz-transition: opacity 1s linear;
+    -o-transition: opacity 1s linear;}
+  to {opacity: 1;
+    transition: opacity 1s linear;
+    -webkit-transition: opacity 1s linear;
+    -moz-transition: opacity 1s linear;
+    -o-transition: opacity 1s linear;}
+}
+.button{
+  position: relative;
+  z-index: 10;
+  top: 200px;
+  text-align: center;
+  animation-name: button;
+  animation-delay: 4s;
+  animation-duration: 1.5s;
+  z-index: 3;
+  animation-fill-mode: backwards;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+
+
+.mainPlanet{
+  position: absolute;
+  right: calc(50% - 100px);
+  z-index: 1;
+}
+@keyframes bounginPlanet {
+  from {right: 540px;}
+  to {right: calc(50% - 100px);transform: rotate(360deg);}
+}
+
+.bounginPlanet{
+  position: absolute;
+  right: calc(50% - 100px);
+  animation-name: bounginPlanet;
+  animation-duration: 1.5s;
+  z-index: 3;
+  animation-fill-mode: backwards;
+  }
+
+  @keyframes spinningPlanet {
+    from {right: -200px;display: block;}
+    to {right: calc(50% - 100px);transform: rotate(-360deg);}
+  }
+
+.spinningPlanet{
+  position: absolute;
+  right: calc(50% - 100px);
+  animation-name: spinningPlanet;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  z-index: 3;
+  animation-fill-mode: backwards;
+}
+a:link, a:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: red;
+}
+
+@keyframes spinningPlanet2 {
+  from {right: 540px;display: block;}
+  to {right: calc(50% - 100px);transform: rotate(360deg);}
+}
+.spinningPlanet2{
+  position: absolute;
+  right: calc(50% - 100px);
+  animation-name: spinningPlanet2;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-fill-mode: backwards;
+  z-index: 6;
+}
