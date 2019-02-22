@@ -8,16 +8,16 @@ export const UserContainer = styled.div`
     display:flex;
 `
 export const GraphContainer = styled.div`
-    width:300px;
-    height: 200px;
+    width:1000px;
+    height: 500px;
 `
 export const ImgContainer = styled.div`
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     margin:10px;
     img {
-        width: 100px;
-        height: 100px;
+        width: 200px;
+        height: 200px;
         border-radius: 50%
     }
 `
