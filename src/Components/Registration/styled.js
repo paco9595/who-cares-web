@@ -22,7 +22,8 @@ export const TextArea = styled.textarea`
     -webkit-border-radius: 45px;
     -moz-border-radius: 45px;
     border-radius: 45px;
-    width: 600px;
+    width: 80%;
+    height: 250px;
     font-size: 23px;
     padding: 15px;
     outline: none;

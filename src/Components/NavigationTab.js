@@ -10,7 +10,7 @@ export const NavigationTab = props => {
 
   return willRender() ? (
     <div>
-      <Link to="/home">Home</Link>
+      <Link to="/events">Events</Link>
       <Link to="/profile">You</Link>
     </div>
   ) : null;
