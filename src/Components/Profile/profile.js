@@ -57,16 +57,18 @@ export class Profile extends PureComponent {
         return (
             <ProfileContainer>
                 <GraphContainer>
-                    <canvas id="myChart"></canvas>
                     <UserContainer>
-                        <ImgContainer>
-                            <img alt="user profle" src="https://via.placeholder.com/150/92c952" />
-                        </ImgContainer>
                         <InfoContainer>
-                            <h2>name: {this.state.user.name}</h2>
-                            <p>type :{this.state.user.response}</p>
+                            <h2>name: {(this.state.user.name).toUpperCase()}</h2>
+                            <p><strong>type: </strong>{this.state.user.response}</p>
+                            <p><strong>description: </strong>Spontaneous, energetic and enthusiastic people – life is never boring around them.</p>
                         </InfoContainer>
+                        {/* <ImgContainer>
+                                <img alt="user profle" src="https://via.placeholder.com/150/92c952" />
+                            </ImgContainer> */}
                     </UserContainer>
+                    <br></br>
+                    <canvas id="myChart"></canvas>
                 </GraphContainer>
             </ProfileContainer>
         )

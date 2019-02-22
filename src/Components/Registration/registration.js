@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Title, TextArea, HeaderSection, CentralContainer, Button, Subtitle } from './styled'
-import axios from 'axios'
-
+import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 export class Registration extends Component {
     state = {
@@ -19,7 +19,6 @@ export class Registration extends Component {
     }
     onTodoChange = (e) => {
         this.setState({ selfInputText: e })
-
     }
     render() {
         return <CentralContainer>
@@ -30,8 +29,7 @@ export class Registration extends Component {
             <TextArea
                 onChange={e => this.onTodoChange(e.target.value)}
             ></TextArea>
-            <br></br>
-            <br></br>
+            <p>in {150 - this.state.selfInputText.length} characters</p>
             <Subtitle>
                 For better results determining your <br /> Personality type, sign up with
             </Subtitle>
@@ -39,7 +37,9 @@ export class Registration extends Component {
             <img src={require("../../Assets/social.png")} />
             <br></br>
             <br></br>
-            <Button onClick={this.onClickHandler}>Sign Up</Button>
+            <Link style={{ background: 'none' }} to="/events">
+                <Button onClick={this.onClickHandler}>Sign Up</Button>
+            </Link>
         </CentralContainer >
     }
 }
