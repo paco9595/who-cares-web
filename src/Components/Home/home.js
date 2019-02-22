@@ -5,7 +5,7 @@ export const Home = props => {
         <div>
             <h1>home</h1>
             <div>
-                <img src="jaj" />
+                <img src="jaj" alt='' />
             </div>
         </div>
     )
