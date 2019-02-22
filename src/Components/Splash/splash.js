@@ -10,7 +10,7 @@ export const Splash = props => {
     console.log(userCookie, 'user cookie');
     return (
         <div className={"splash"}>
-            <h4>who cares?</h4>
+            <h4 className={"top"}>who cares?</h4>
             <Animation />
         </div>
     )
@@ -32,8 +32,8 @@ const Animation = props => {
                 <Planet size={200} mood="blissful" color="#FDA7DC" />
             </div>
             <div className={"button"}>
-                <h2>we do</h2>
-                <Link to="/registration">Start quizz</Link>
+                <h4>we do!</h4>
+                <Link to="/registration">sign in</Link>
             </div>
         </div>
     )

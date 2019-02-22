@@ -38,7 +38,7 @@ export const mockData = [
   {
     name: 'imss talk',
     description: 'lorem ipsum so such lorem ipsum',
-    images: ['https://upload.wikimedia.org/wikipedia/commons/b/ba/IMSS_Logos%C3%ADmbolo.png'],
+    images: ['https://image.shutterstock.com/image-vector/medical-concept-hospital-building-doctor-260nw-588196298.jpg'],
     team: {
       ENTJ: 5,
       ANY: 10

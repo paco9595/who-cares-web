@@ -26,7 +26,7 @@ export const Events = props => {
 
 const Event = (props) => {
     return (
-        <Link to={`/event/${props.id}`}>
+        <Link to={`/event/${props.id}`} key={props.id}>
             <EventCard>
                 <ImgCard>
                     <img src={props.images[0]} />

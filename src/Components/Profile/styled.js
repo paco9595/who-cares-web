@@ -6,14 +6,17 @@ export const ProfileContainer = styled.div`
 `
 export const UserContainer = styled.div`
     display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 `
 export const GraphContainer = styled.div`
-    width:1000px;
+    width:1500px;
     height: 500px;
 `
 export const ImgContainer = styled.div`
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     margin:10px;
     img {
         width: 200px;
@@ -22,5 +25,6 @@ export const ImgContainer = styled.div`
     }
 `
 export const InfoContainer = styled.div`
+    text-align: center;
 
 `
