@@ -2,9 +2,7 @@ export const mockData = [
   {
     name: 'museoum visit',
     description: 'lorem ipsum so such lorem ipsum',
-    images: [
-
-    ],
+    images: ['https://irenet0rres.files.wordpress.com/2011/06/marco.jpg'],
     team: {
       INTJ: 1,
       INTP: 1,
@@ -40,8 +38,7 @@ export const mockData = [
   {
     name: 'imss talk',
     description: 'lorem ipsum so such lorem ipsum',
-    images: [
-    ],
+    images: ['https://upload.wikimedia.org/wikipedia/commons/b/ba/IMSS_Logos%C3%ADmbolo.png'],
     team: {
       ENTJ: 5,
       ANY: 10
