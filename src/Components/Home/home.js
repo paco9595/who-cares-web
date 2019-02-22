@@ -1,5 +1,12 @@
 import React from 'react'
 
 export const Home = props => {
-    return (<h1>hohme</h1>)
+    return (
+        <div>
+            <h1>home</h1>
+            <div>
+                <img src="jaj" />
+            </div>
+        </div>
+    )
 }
