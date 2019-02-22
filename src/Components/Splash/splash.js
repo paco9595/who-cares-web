@@ -12,8 +12,6 @@ export const Splash = props => {
         <div className={"splash"}>
             <h4>who cares?</h4>
             <Animation />
-            <h2>we do</h2>
-            <Link to="/registration">Start quizz</Link>
         </div>
     )
 }
@@ -30,8 +28,12 @@ const Animation = props => {
             <div className={"spinningPlanet"}>
                 <Planet size={200} mood="blissful" color="#FDA7DC" />
             </div>
-            <div className={"spinningPlanet"}>
-                <Planet size={200} mood="happy" color="#FDA7DC" />
+            <div className={"spinningPlanet2"}>
+                <Planet size={200} mood="blissful" color="#FDA7DC" />
+            </div>
+            <div className={"button"}>
+                <h2>we do</h2>
+                <Link to="/registration">Start quizz</Link>
             </div>
         </div>
     )
